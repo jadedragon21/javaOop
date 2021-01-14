@@ -13,5 +13,9 @@ public class Main {
 		sportsCar.start();
 		sportsCar.stop();
 		System.out.println(sportsCar);
+		Car fam = new Car("White", 4);
+		fam.setCarType(Car.TYPE_FAMILY);
+
+
 	}
 }

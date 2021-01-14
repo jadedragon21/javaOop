@@ -16,7 +16,7 @@ public Car(String color, int numWheels, int numberOfDoors){
         this.numWheels = numWheels;
         this.numberOfDoors = numberOfDoors;
         }
-
+//methods
 public String getColor() {
         return color;
         }
@@ -47,11 +47,30 @@ public void start(){
 public void stop(){
         System.out.println("Car stopping");
         }
+//no args
 public void drive(){
         System.out.println("Car moving");
         }
+//int miles
+public void drive(int miles){
+        System.out.println("Driving for " + miles + " miles. "); }
+//int mile and speed
+public void drive(int miles,int speed){
+        System.out.println("Driving " + speed + " mph for " + miles + " miles. "); }
+//String destination
+public void drive(String destination){
+        System.out.println("Driving to" + destination); }
 
+        @Override
+        public String toString() {
+                return "Car{" +
+                        "color='" + color + '\'' +
+                        ", numWheels=" + numWheels +
+                        ", numberOfDoors=" + numberOfDoors +
+                        '}';
         }
+
+}
 
 
 
